@@ -19,3 +19,7 @@ made in godot with gdscript and gdresource
 ```sh
 git clone https://github.com/https://github.com/evacoffee/grappler.git
 ```
+
+2.) go on godot
+
+3.) click import and select the project.godot file inside the downloaded project
