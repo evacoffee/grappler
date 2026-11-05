@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://hppmal2fpshl"]
+
+[ext_resource type="Texture2D" uid="uid://c4jdfjpgs8joe" path="res://assets/images/ui/heart_full.png" id="1_7e00d"]
+[ext_resource type="Script" uid="uid://fqt24p51jf5n" path="res://scripts/heartpickup.gd" id="1_ed6c1"]
+[ext_resource type="AudioStream" uid="uid://x1v0yulocrir" path="res://assets/audio/heartpick.wav" id="3_pt68t"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_dqkxp"]
+radius = 25.179358
+
+[node name="heartpickup" type="Area2D" unique_id=1670716257]
+script = ExtResource("1_ed6c1")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1204774943]
+scale = Vector2(0.075, 0.075)
+texture = ExtResource("1_7e00d")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=82092040]
+shape = SubResource("CircleShape2D_dqkxp")
+
+[node name="heartpick" type="AudioStreamPlayer2D" parent="." unique_id=1780297945]
+z_index = -10
+stream = ExtResource("3_pt68t")
+volume_db = 20.0
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
