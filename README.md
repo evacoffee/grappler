@@ -17,7 +17,7 @@ made in godot with gdscript and gdresource
 # development
 1.) clone this repo
 ```sh
-git clone https://github.com/https://github.com/evacoffee/grappler.git
+git clone https://github.com/evacoffee/grappler.git
 ```
 
 2.) go on godot
