@@ -4,6 +4,9 @@ a 3D game of a player swinging through a cavern with a grappling hook, using phy
 
 play here!:
 
+https://github.com/user-attachments/assets/820850b4-ab4b-4f02-a7e9-abfeb18ca12b
+
+
 made in godot with gdscript and gdresource
 
 # features
