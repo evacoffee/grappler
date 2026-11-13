@@ -31,7 +31,7 @@ p.s. the game works on mobile too, so feel free to try it out!
 - WASD / move
 - space / jump
 - e / interact with chests
-- q / use grappler (hold to charge, let go to release)
+- q / use grappler (hold to charge, let go to release, recommended to release just before you hit the rock as it propels you farther)
 - esc / pause
 - tab / achivements
   
