@@ -1,0 +1,72 @@
+[gd_scene format=3 uid="uid://l78din0e06l8"]
+
+[ext_resource type="Texture2D" uid="uid://c7edjujynunaw" path="res://assets/images/mobile/joystick.png" id="1_bnar2"]
+[ext_resource type="Script" uid="uid://bk5xtvaj7o6l3" path="res://scripts/mobilecontrols.gd" id="1_go2tr"]
+[ext_resource type="Script" uid="uid://bfrokiwjxlx7k" path="res://scripts/mobile_joystick.gd" id="2_acybu"]
+[ext_resource type="Texture2D" uid="uid://cnpnu1cutm5q7" path="res://assets/images/mobile/knob.png" id="2_go2tr"]
+[ext_resource type="Texture2D" uid="uid://cmvgub6k1lyrk" path="res://assets/images/mobile/jump.png" id="3_acybu"]
+[ext_resource type="Texture2D" uid="uid://b0jkt508jtyvm" path="res://assets/images/mobile/interact.png" id="4_auakp"]
+[ext_resource type="Texture2D" uid="uid://do6ojag4mwk43" path="res://assets/images/mobile/grapple.png" id="5_34rdu"]
+
+[node name="mobilecontrols" type="CanvasLayer" unique_id=778047966]
+script = ExtResource("1_go2tr")
+
+[node name="joystick" type="Control" parent="." unique_id=1003748867]
+layout_mode = 3
+anchor_left = 0.009000001
+anchor_top = 0.98200005
+anchor_right = 0.009000001
+anchor_bottom = 0.98200005
+offset_left = 3.4799995
+offset_top = -207.04004
+offset_right = 206.48
+offset_bottom = -5.040039
+grow_vertical = 0
+script = ExtResource("2_acybu")
+
+[node name="background" type="TextureRect" parent="joystick" unique_id=887052366]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.0050000013
+anchor_top = -0.0050000763
+anchor_right = -0.0045483396
+anchor_bottom = -0.0050000763
+offset_right = 199.93
+offset_bottom = 200.0
+mouse_filter = 2
+texture = ExtResource("1_bnar2")
+metadata/_edit_use_anchors_ = true
+
+[node name="knob" type="TextureRect" parent="joystick" unique_id=18428988]
+layout_mode = 1
+anchors_preset = -1
+offset_left = 63.0
+offset_top = 64.0
+offset_right = 133.0
+offset_bottom = 134.0
+mouse_filter = 2
+texture = ExtResource("2_go2tr")
+
+[node name="jump" type="TextureButton" parent="." unique_id=1341660019]
+anchors_preset = -1
+offset_left = 1178.0
+offset_top = 316.0
+offset_right = 1258.0
+offset_bottom = 396.0
+texture_normal = ExtResource("3_acybu")
+
+[node name="interact" type="TextureButton" parent="." unique_id=860379774]
+anchors_preset = -1
+offset_left = 1178.0
+offset_top = 212.0
+offset_right = 1258.0
+offset_bottom = 292.0
+texture_normal = ExtResource("4_auakp")
+
+[node name="grapple" type="TextureButton" parent="." unique_id=217056061]
+anchors_preset = -1
+offset_left = 1174.0
+offset_top = 420.0
+offset_right = 1264.0
+offset_bottom = 510.0
+texture_normal = ExtResource("5_34rdu")

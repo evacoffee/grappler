@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://c6unbydtxse6o"]
+
+[ext_resource type="PackedScene" uid="uid://c032pyhmyf5oq" path="res://scenes/levels/baselevel.tscn" id="1_c2dxh"]
+[ext_resource type="PackedScene" uid="uid://dkrgqd1x104sy" path="res://assets/images/tileset/icemodels/iceberg.glb" id="2_ntykc"]
+[ext_resource type="PackedScene" uid="uid://uqqm2g1sv3r2" path="res://assets/images/tileset/icemodels/snow_mound.glb" id="3_bruuy"]
+[ext_resource type="PackedScene" uid="uid://dw3lyqmmj10h7" path="res://assets/images/tileset/icemodels/ice_rock.glb" id="4_b2rgr"]
+[ext_resource type="PackedScene" uid="uid://cru41g6k08vog" path="res://assets/images/tileset/icemodels/glacier_chunk.glb" id="5_onma3"]
+[ext_resource type="PackedScene" uid="uid://bg2ji1ci1pv08" path="res://assets/images/tileset/icemodels/ice_block.glb" id="6_vuyuj"]
+[ext_resource type="PackedScene" uid="uid://buc3lehqx45sc" path="res://assets/images/tileset/icemodels/seal.glb" id="7_omrdx"]
+[ext_resource type="PackedScene" uid="uid://bullntvaus1xq" path="res://assets/images/tileset/icemodels/polar_bear.glb" id="8_5iydt"]
+[ext_resource type="PackedScene" uid="uid://rhxy1rq56b74" path="res://scenes/upgrade_chests.tscn" id="9_5fbrw"]
+
+[node name="baselevel" unique_id=898019581 instance=ExtResource("1_c2dxh")]
+
+[node name="iceberg2" parent="enviromentvisual" parent_id_path=PackedInt32Array(2132876993) index="0" unique_id=83120177 instance=ExtResource("2_ntykc")]
+transform = Transform3D(0.9999402, 0.00423673, 0.01008383, -0.0042354246, 0.99999106, -0.0001507679, -0.0100843785, 0.00010804957, 0.99994916, 5.7075768, 27.648468, 3.4283066)
+
+[node name="iceberg3" parent="enviromentvisual" parent_id_path=PackedInt32Array(2132876993) index="1" unique_id=2070183133 instance=ExtResource("2_ntykc")]
+transform = Transform3D(0.9999402, 0.00423673, 0.01008383, -0.0042354246, 0.99999106, -0.0001507679, -0.0100843785, 0.00010804957, 0.99994916, 5.7075768, 77.70837, 3.4283066)
+
+[node name="iceberg4" parent="enviromentvisual" parent_id_path=PackedInt32Array(2132876993) index="2" unique_id=1840168204 instance=ExtResource("2_ntykc")]
+transform = Transform3D(0.9999402, 0.00423673, 0.01008383, -0.0042354246, 0.99999106, -0.0001507679, -0.0100843785, 0.00010804957, 0.99994916, -4.170418, 90.382645, 3.4283066)
+
+[node name="snow_mound2" parent="enviromentvisual" parent_id_path=PackedInt32Array(2132876993) index="3" unique_id=1637683750 instance=ExtResource("3_bruuy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.879181, 21.858677, 0)
+
+[node name="snow_mound3" parent="enviromentvisual" parent_id_path=PackedInt32Array(2132876993) index="4" unique_id=1678294423 instance=ExtResource("3_bruuy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.8221016, 59.882248, 0)
+
+[node name="ice_rock2" parent="enviromentvisual" parent_id_path=PackedInt32Array(2132876993) index="5" unique_id=1922157897 instance=ExtResource("4_b2rgr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 13.733515, -11.098345)
+
+[node name="glacier_chunk2" parent="enviromentvisual" parent_id_path=PackedInt32Array(2132876993) index="6" unique_id=1177715507 instance=ExtResource("5_onma3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 47.553314, 0)
+
+[node name="glacier_chunk3" parent="enviromentvisual" parent_id_path=PackedInt32Array(2132876993) index="7" unique_id=274447556 instance=ExtResource("5_onma3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.885593, 14.566765, 0)
+
+[node name="glacier_chunk4" parent="enviromentvisual" parent_id_path=PackedInt32Array(2132876993) index="8" unique_id=1583704385 instance=ExtResource("5_onma3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.885593, 35.17586, 0)
+
+[node name="ice_block2" parent="enviromentvisual" parent_id_path=PackedInt32Array(2132876993) index="9" unique_id=1789449776 instance=ExtResource("6_vuyuj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.440531, 66.035194, 0)
+
+[node name="seal2" parent="enviromentvisual" parent_id_path=PackedInt32Array(2132876993) index="10" unique_id=1008701534 instance=ExtResource("7_omrdx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 54.41426, 0)
+
+[node name="polar_bear2" parent="enviromentvisual" parent_id_path=PackedInt32Array(2132876993) index="11" unique_id=761036403 instance=ExtResource("8_5iydt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.4171715, 67.77004, 0)
+
+[node name="upgradechest" parent="enviromentvisual" parent_id_path=PackedInt32Array(2132876993) index="12" unique_id=2070618565 instance=ExtResource("9_5fbrw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.95473, 69.390175, 0)

@@ -1,0 +1,86 @@
+[gd_scene format=3 uid="uid://ba426nnrfkp0i"]
+
+[ext_resource type="PackedScene" uid="uid://c032pyhmyf5oq" path="res://scenes/levels/baselevel.tscn" id="1_2k7im"]
+[ext_resource type="PackedScene" uid="uid://cru41g6k08vog" path="res://assets/images/tileset/icemodels/glacier_chunk.glb" id="2_7e7ni"]
+[ext_resource type="PackedScene" uid="uid://dw3lyqmmj10h7" path="res://assets/images/tileset/icemodels/ice_rock.glb" id="3_hkd47"]
+[ext_resource type="PackedScene" uid="uid://bi23e1ntqftpb" path="res://assets/images/tileset/icemodels/crystal_cluster.glb" id="4_hvxp4"]
+[ext_resource type="PackedScene" uid="uid://dkrgqd1x104sy" path="res://assets/images/tileset/icemodels/iceberg.glb" id="5_p7cwj"]
+[ext_resource type="PackedScene" uid="uid://uqqm2g1sv3r2" path="res://assets/images/tileset/icemodels/snow_mound.glb" id="6_5db3f"]
+[ext_resource type="PackedScene" uid="uid://bg2ji1ci1pv08" path="res://assets/images/tileset/icemodels/ice_block.glb" id="7_r3n8r"]
+[ext_resource type="PackedScene" uid="uid://buc3lehqx45sc" path="res://assets/images/tileset/icemodels/seal.glb" id="8_ko8rk"]
+[ext_resource type="PackedScene" uid="uid://rhxy1rq56b74" path="res://scenes/upgrade_chests.tscn" id="9_gttrq"]
+[ext_resource type="FontFile" uid="uid://bsp8upfv1kww8" path="res://assets/images/font/PixelifySans-Medium.otf" id="10_hkd47"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hvxp4"]
+bg_color = Color(0.14117648, 0.3529412, 0.60784316, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.8, 0.8, 0, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[node name="baselevel" unique_id=898019581 instance=ExtResource("1_2k7im")]
+
+[node name="glacier_chunk2" parent="enviromentvisual" parent_id_path=PackedInt32Array(2132876993) index="0" unique_id=1177715507 instance=ExtResource("2_7e7ni")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 85.07361, 0)
+
+[node name="glacier_chunk3" parent="enviromentvisual" parent_id_path=PackedInt32Array(2132876993) index="1" unique_id=692667715 instance=ExtResource("2_7e7ni")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.4275703, 10.535496, 8.979279)
+
+[node name="ice_rock2" parent="enviromentvisual" parent_id_path=PackedInt32Array(2132876993) index="2" unique_id=1922157897 instance=ExtResource("3_hkd47")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.275079, 22.974773, 4.272938)
+
+[node name="crystal_cluster2" parent="enviromentvisual" parent_id_path=PackedInt32Array(2132876993) index="3" unique_id=500190164 instance=ExtResource("4_hvxp4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 42.728046, 0)
+
+[node name="iceberg2" parent="enviromentvisual" parent_id_path=PackedInt32Array(2132876993) index="4" unique_id=83120177 instance=ExtResource("5_p7cwj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 37.35957, 0)
+
+[node name="snow_mound2" parent="enviromentvisual" parent_id_path=PackedInt32Array(2132876993) index="5" unique_id=1637683750 instance=ExtResource("6_5db3f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.434394, 54.597504, 0)
+
+[node name="snow_mound4" parent="enviromentvisual" parent_id_path=PackedInt32Array(2132876993) index="6" unique_id=1607256664 instance=ExtResource("6_5db3f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.434394, 78.32541, 0)
+
+[node name="snow_mound3" parent="enviromentvisual" parent_id_path=PackedInt32Array(2132876993) index="7" unique_id=222553236 instance=ExtResource("6_5db3f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.300908, 45.949814, 0)
+
+[node name="ice_block2" parent="enviromentvisual" parent_id_path=PackedInt32Array(2132876993) index="8" unique_id=1789449776 instance=ExtResource("7_r3n8r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.023855, 65.71724, 0)
+
+[node name="seal2" parent="enviromentvisual" parent_id_path=PackedInt32Array(2132876993) index="9" unique_id=1008701534 instance=ExtResource("8_ko8rk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.68713, 59.896706, 0)
+
+[node name="iceberg3" parent="enviromentvisual" parent_id_path=PackedInt32Array(2132876993) index="10" unique_id=288420106 instance=ExtResource("5_p7cwj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 67.44062, 0)
+
+[node name="iceberg4" parent="enviromentvisual" parent_id_path=PackedInt32Array(2132876993) index="11" unique_id=948444741 instance=ExtResource("5_p7cwj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.0853577, 89.78229, 0)
+
+[node name="upgradechest" parent="enviromentvisual" parent_id_path=PackedInt32Array(2132876993) index="12" unique_id=2070618565 instance=ExtResource("9_gttrq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 92.10373, 0)
+
+[node name="note1" type="CanvasLayer" parent="." index="9" unique_id=1358165074]
+
+[node name="notepanel" type="Panel" parent="note1" index="0" unique_id=1143272573]
+anchors_preset = -1
+offset_left = 609.0
+offset_top = 640.0
+offset_right = 1275.0
+offset_bottom = 715.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_hvxp4")
+
+[node name="notelabel" type="Label" parent="note1/notepanel" index="0" unique_id=778052834]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 16.0
+offset_right = 621.0
+offset_bottom = 57.0
+theme_override_fonts/font = ExtResource("10_hkd47")
+theme_override_font_sizes/font_size = 20
+text = "hey you made it to the halfway point! i hope the journey was easy 
+on the mind and grapple. good luck on the next 10!"

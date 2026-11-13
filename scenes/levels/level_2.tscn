@@ -1,0 +1,84 @@
+[gd_scene format=3 uid="uid://yjcwungj5b1o"]
+
+[ext_resource type="PackedScene" uid="uid://c032pyhmyf5oq" path="res://scenes/levels/baselevel.tscn" id="1_j2425"]
+[ext_resource type="PackedScene" uid="uid://dw3lyqmmj10h7" path="res://assets/images/tileset/icemodels/ice_rock.glb" id="2_ibugp"]
+[ext_resource type="PackedScene" uid="uid://uqqm2g1sv3r2" path="res://assets/images/tileset/icemodels/snow_mound.glb" id="3_8qukl"]
+[ext_resource type="PackedScene" uid="uid://cru41g6k08vog" path="res://assets/images/tileset/icemodels/glacier_chunk.glb" id="4_3p04p"]
+[ext_resource type="PackedScene" uid="uid://dkrgqd1x104sy" path="res://assets/images/tileset/icemodels/iceberg.glb" id="5_qsp8v"]
+[ext_resource type="PackedScene" uid="uid://fkvpj7l3l5af" path="res://assets/images/tileset/icemodels/stalactite_cluster.glb" id="6_nt80m"]
+[ext_resource type="PackedScene" uid="uid://c4ow4d2c7s68w" path="res://assets/images/tileset/icemodels/stalagmite_small.glb" id="7_brxtv"]
+[ext_resource type="PackedScene" uid="uid://bg2ji1ci1pv08" path="res://assets/images/tileset/icemodels/ice_block.glb" id="8_8qukl"]
+[ext_resource type="FontFile" uid="uid://bsp8upfv1kww8" path="res://assets/images/font/PixelifySans-Medium.otf" id="9_3p04p"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qsp8v"]
+bg_color = Color(0.14117648, 0.3529412, 0.60784316, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.8, 0.8, 0, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[node name="baselevel" unique_id=898019581 instance=ExtResource("1_j2425")]
+
+[node name="ice_rock2" parent="enviromentvisual" parent_id_path=PackedInt32Array(2132876993) index="0" unique_id=1922157897 instance=ExtResource("2_ibugp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.346105, 12.729752, 0)
+
+[node name="snow_mound2" parent="enviromentvisual" parent_id_path=PackedInt32Array(2132876993) index="1" unique_id=1637683750 instance=ExtResource("3_8qukl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.278931, 28.458185, 0)
+
+[node name="snow_mound3" parent="enviromentvisual" parent_id_path=PackedInt32Array(2132876993) index="2" unique_id=1383333752 instance=ExtResource("3_8qukl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.88842, 77.75966, 0)
+
+[node name="glacier_chunk2" parent="enviromentvisual" parent_id_path=PackedInt32Array(2132876993) index="3" unique_id=1177715507 instance=ExtResource("4_3p04p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.96253, 45.37781, 0)
+
+[node name="glacier_chunk3" parent="enviromentvisual" parent_id_path=PackedInt32Array(2132876993) index="4" unique_id=736598896 instance=ExtResource("4_3p04p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.033731, 84.37579, 0)
+
+[node name="iceberg2" parent="enviromentvisual" parent_id_path=PackedInt32Array(2132876993) index="5" unique_id=83120177 instance=ExtResource("5_qsp8v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.907051, 37.018986, 0)
+
+[node name="iceberg4" parent="enviromentvisual" parent_id_path=PackedInt32Array(2132876993) index="6" unique_id=8480643 instance=ExtResource("5_qsp8v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0093727, 90.62584, 0)
+
+[node name="iceberg3" parent="enviromentvisual" parent_id_path=PackedInt32Array(2132876993) index="7" unique_id=1695024595 instance=ExtResource("5_qsp8v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.866377, 15.1546135, 0)
+
+[node name="stalactite_cluster2" parent="enviromentvisual" parent_id_path=PackedInt32Array(2132876993) index="8" unique_id=2127292962 instance=ExtResource("6_nt80m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.489191, 62.513165, 0)
+
+[node name="stalagmite_small2" parent="enviromentvisual" parent_id_path=PackedInt32Array(2132876993) index="9" unique_id=771151431 instance=ExtResource("7_brxtv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.417368, 48.19849, 0)
+
+[node name="ice_block2" parent="enviromentvisual" parent_id_path=PackedInt32Array(2132876993) index="10" unique_id=1789449776 instance=ExtResource("8_8qukl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 65, 0)
+
+[node name="glacier_chunk4" parent="enviromentvisual" parent_id_path=PackedInt32Array(2132876993) index="11" unique_id=947618478 instance=ExtResource("4_3p04p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 61, 0)
+
+[node name="note1" type="CanvasLayer" parent="." index="9" unique_id=820432039]
+
+[node name="notepanel" type="Panel" parent="note1" index="0" unique_id=1123335105]
+anchors_preset = -1
+offset_left = 634.0
+offset_top = 595.0
+offset_right = 1275.0
+offset_bottom = 715.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_qsp8v")
+
+[node name="notelabel" type="Label" parent="note1/notepanel" index="0" unique_id=1947741072]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 16.0
+offset_right = 621.0
+offset_bottom = 57.0
+theme_override_fonts/font = ExtResource("9_3p04p")
+theme_override_font_sizes/font_size = 20
+text = "controls: wasd for movement, q for grapple (hold for charging), 
+height bar for overall progress but bar under level number for 
+induvidual level height, e to open chests for upgrades,
+ tab to open achievements, esc for pause panel"

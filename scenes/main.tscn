@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://cn4jpo30whr2w"]
+
+[ext_resource type="Script" uid="uid://c7uoh4n1som80" path="res://scripts/main.gd" id="1_tbgi4"]
+[ext_resource type="PackedScene" uid="uid://c032pyhmyf5oq" path="res://scenes/levels/baselevel.tscn" id="2_jyhfs"]
+[ext_resource type="PackedScene" uid="uid://dfq6ojbcapsbu" path="res://scenes/hud.tscn" id="3_sugp2"]
+[ext_resource type="AudioStream" uid="uid://bms1lkw0rfuru" path="res://assets/audio/mainmusic.wav" id="4_jyhfs"]
+[ext_resource type="PackedScene" uid="uid://co6xhqa5aamov" path="res://scenes/upgrademenu.tscn" id="4_tbgi4"]
+[ext_resource type="PackedScene" uid="uid://l78din0e06l8" path="res://scenes/mobilecontrols.tscn" id="5_tipki"]
+[ext_resource type="AudioStream" uid="uid://renp2wagibai" path="res://assets/audio/portalsound.wav" id="6_tefeu"]
+[ext_resource type="Shader" uid="uid://btyenpcbu8m67" path="res://scripts/shader/portal_transition.gdshader" id="7_o6xl0"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_tefeu"]
+shader = ExtResource("7_o6xl0")
+shader_parameter/progress = 0.0
+shader_parameter/portal_color = Color(0.05, 0.65, 1, 1)
+
+[node name="main" type="Node3D" unique_id=660377983]
+script = ExtResource("1_tbgi4")
+
+[node name="baselevel" parent="." unique_id=898019581 instance=ExtResource("2_jyhfs")]
+
+[node name="hud" parent="." unique_id=1713799215 instance=ExtResource("3_sugp2")]
+
+[node name="upgrademenu" parent="." unique_id=987759474 instance=ExtResource("4_tbgi4")]
+
+[node name="mobilecontrols" parent="." unique_id=778047966 instance=ExtResource("5_tipki")]
+
+[node name="mainmusic" type="AudioStreamPlayer" parent="." unique_id=1746363558]
+process_mode = 3
+stream = ExtResource("4_jyhfs")
+autoplay = true
+
+[node name="portalsound" type="AudioStreamPlayer" parent="." unique_id=1676042353]
+stream = ExtResource("6_tefeu")
+volume_db = 5.0
+
+[node name="transitionlayer" type="CanvasLayer" parent="." unique_id=775534262]
+layer = 100
+
+[node name="fade" type="ColorRect" parent="transitionlayer" unique_id=658695936]
+modulate = Color(1, 1, 1, 0)
+material = SubResource("ShaderMaterial_tefeu")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)

@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://rhxy1rq56b74"]
+
+[ext_resource type="PackedScene" uid="uid://c8ebhj6t2jior" path="res://assets/images/tileset/icemodels/frozen_chest.glb" id="1_q3q8p"]
+[ext_resource type="Script" uid="uid://bb3v2jd6kgs2e" path="res://scripts/upgrade_chests.gd" id="1_vtg8r"]
+[ext_resource type="FontFile" uid="uid://bsp8upfv1kww8" path="res://assets/images/font/PixelifySans-Medium.otf" id="2_vkp8o"]
+[ext_resource type="AudioStream" uid="uid://boc47w6k8d52p" path="res://assets/audio/chestopening.wav" id="4_5ukb0"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_f3qjg"]
+size = Vector3(1, 0.92822266, 0.68084717)
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_1iy0d"]
+radius = 3.0
+
+[node name="upgradechest" type="StaticBody3D" unique_id=2070618565]
+script = ExtResource("1_vtg8r")
+
+[node name="frozen_chest2" parent="." unique_id=1177096356 instance=ExtResource("1_q3q8p")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1962451718]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4597168, -0.0082092285)
+shape = SubResource("BoxShape3D_f3qjg")
+
+[node name="promt" type="Label3D" parent="." unique_id=1330855902]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.0705113, 0)
+modulate = Color(0.22352941, 1, 1, 1)
+text = "PRESS E TO OPEN"
+font = ExtResource("2_vkp8o")
+font_size = 37
+
+[node name="interationarea" type="Area3D" parent="." unique_id=1184444840]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="interationarea" unique_id=1206237543]
+shape = SubResource("SphereShape3D_1iy0d")
+
+[node name="opensound" type="AudioStreamPlayer" parent="." unique_id=730365971]
+stream = ExtResource("4_5ukb0")
+volume_db = 20.0
+
+[connection signal="area_entered" from="interationarea" to="." method="_on_interationarea_area_entered"]
+[connection signal="area_exited" from="interationarea" to="." method="_on_interationarea_area_exited"]

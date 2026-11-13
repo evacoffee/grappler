@@ -1,0 +1,238 @@
+[gd_scene format=3 uid="uid://c032pyhmyf5oq"]
+
+[ext_resource type="Script" uid="uid://bw88magmx3q63" path="res://scripts/baselevel.gd" id="1_ed63o"]
+[ext_resource type="Script" uid="uid://3531unyq3mk0" path="res://scripts/exitportalglow.gd" id="2_puwfw"]
+[ext_resource type="PackedScene" uid="uid://bg2ji1ci1pv08" path="res://assets/images/tileset/icemodels/ice_block.glb" id="3_ofmkr"]
+[ext_resource type="PackedScene" uid="uid://bi23e1ntqftpb" path="res://assets/images/tileset/icemodels/crystal_cluster.glb" id="4_rdbkn"]
+[ext_resource type="PackedScene" uid="uid://c4ow4d2c7s68w" path="res://assets/images/tileset/icemodels/stalagmite_small.glb" id="5_0bl65"]
+[ext_resource type="PackedScene" uid="uid://cc0n7vlm8utin" path="res://assets/images/tileset/icemodels/stalagmite_large.glb" id="6_y7cm8"]
+[ext_resource type="PackedScene" uid="uid://dw3lyqmmj10h7" path="res://assets/images/tileset/icemodels/ice_rock.glb" id="7_mxq6a"]
+[ext_resource type="PackedScene" uid="uid://buc3lehqx45sc" path="res://assets/images/tileset/icemodels/seal.glb" id="8_puwfw"]
+[ext_resource type="PackedScene" uid="uid://c2626xg5fdbf1" path="res://assets/images/tileset/icemodels/torch_ice_wall.glb" id="9_fkohr"]
+[ext_resource type="PackedScene" uid="uid://kflqwqe5ocyv" path="res://assets/images/tileset/icemodels/penguin.glb" id="10_puwfw"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_f3qjg"]
+albedo_color = Color(0.078431375, 0.16862746, 0.28235295, 1)
+emission_enabled = true
+
+[sub_resource type="BoxMesh" id="BoxMesh_1iy0d"]
+size = Vector3(32, 100, 0.5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bc5iu"]
+size = Vector3(32, 100, 0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_al5uu"]
+albedo_color = Color(0.078431375, 0.16862746, 0.28235295, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_f3qjg"]
+size = Vector3(32, 100, 0.5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_fm4en"]
+size = Vector3(32, 100, 0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v0a4s"]
+albedo_color = Color(0.078431375, 0.16862746, 0.28235295, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_vhq0s"]
+size = Vector3(0.5, 100, 32)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_d5dl1"]
+size = Vector3(0.5, 100, 32)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_istei"]
+albedo_color = Color(0.078431375, 0.16862746, 0.28235295, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_dhksd"]
+size = Vector3(0.5, 100, 32)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hlc4h"]
+size = Vector3(0.5, 100, 32)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vhq0s"]
+albedo_color = Color(0.14117648, 0.3529412, 0.60784316, 1)
+metallic = 0.15
+roughness = 0.25
+
+[sub_resource type="BoxMesh" id="BoxMesh_al5uu"]
+size = Vector3(32, 4, 32)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1iy0d"]
+size = Vector3(32, 4, 32)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_f3qjg"]
+size = Vector3(32, 2, 32)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3lxwx"]
+shading_mode = 0
+grow = true
+grow_amount = 2.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_v0a4s"]
+size = Vector3(32, 0.3, 32)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vhq0s"]
+size = Vector3(32, 3, 32)
+
+[node name="baselevel" type="Node3D" unique_id=898019581]
+script = ExtResource("1_ed63o")
+
+[node name="frontmain" type="StaticBody3D" parent="." unique_id=1335115141]
+collision_layer = 2
+
+[node name="front" type="MeshInstance3D" parent="frontmain" unique_id=261219672]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 50, -16)
+material_override = SubResource("StandardMaterial3D_f3qjg")
+mesh = SubResource("BoxMesh_1iy0d")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="frontmain" unique_id=831742302]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 50, -16)
+shape = SubResource("BoxShape3D_bc5iu")
+
+[node name="backmain" type="StaticBody3D" parent="." unique_id=966778806]
+collision_layer = 2
+
+[node name="back" type="MeshInstance3D" parent="backmain" unique_id=2104432265]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 50, 16)
+material_override = SubResource("StandardMaterial3D_al5uu")
+mesh = SubResource("BoxMesh_f3qjg")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="backmain" unique_id=2113410746]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 50, 16)
+shape = SubResource("BoxShape3D_fm4en")
+
+[node name="leftmain" type="StaticBody3D" parent="." unique_id=123698201]
+collision_layer = 2
+
+[node name="left" type="MeshInstance3D" parent="leftmain" unique_id=343165225]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 50, 0)
+material_override = SubResource("StandardMaterial3D_v0a4s")
+mesh = SubResource("BoxMesh_vhq0s")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="leftmain" unique_id=2111706024]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 50, 0)
+shape = SubResource("BoxShape3D_d5dl1")
+
+[node name="rightmain" type="StaticBody3D" parent="." unique_id=589380677]
+collision_layer = 2
+
+[node name="right" type="MeshInstance3D" parent="rightmain" unique_id=767676877]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 50, 0)
+material_override = SubResource("StandardMaterial3D_istei")
+mesh = SubResource("BoxMesh_dhksd")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="rightmain" unique_id=754090376]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 50, 0)
+shape = SubResource("BoxShape3D_hlc4h")
+
+[node name="icebottom" type="StaticBody3D" parent="." unique_id=1941377373]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.126102, 0)
+
+[node name="visual" type="MeshInstance3D" parent="icebottom" unique_id=223315767]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -3, 0)
+material_override = SubResource("StandardMaterial3D_vhq0s")
+mesh = SubResource("BoxMesh_al5uu")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="icebottom" unique_id=1513048584]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -3, 0)
+shape = SubResource("BoxShape3D_1iy0d")
+
+[node name="bluedeatharea" type="Area3D" parent="." unique_id=871997637]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7.8950844, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="bluedeatharea" unique_id=256880833]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7.498708, 0)
+shape = SubResource("BoxShape3D_f3qjg")
+
+[node name="exitportal" type="MeshInstance3D" parent="." unique_id=162321976]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 99.68594, 0)
+material_override = SubResource("StandardMaterial3D_3lxwx")
+mesh = SubResource("BoxMesh_v0a4s")
+
+[node name="portallight" type="OmniLight3D" parent="exitportal" unique_id=1540044825]
+light_color = Color(0.22352941, 1, 1, 1)
+light_energy = 2.0
+script = ExtResource("2_puwfw")
+
+[node name="exittrigger" type="Area3D" parent="exitportal" unique_id=108524053]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 21.587524, 0)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="exitportal/exittrigger" unique_id=512715882]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -23.268356, 0)
+shape = SubResource("BoxShape3D_vhq0s")
+
+[node name="stays" type="Node3D" parent="." unique_id=1116836819]
+
+[node name="ice_block2" parent="stays" unique_id=1789449776 instance=ExtResource("3_ofmkr")]
+transform = Transform3D(-2.4998596, 0.00022945709, 0.026503513, 0.0001873066, 2.499997, -0.0039769057, -0.026503844, -0.0039746957, -2.4998565, -0.20077461, 1.0615673, 0.7801156)
+
+[node name="ice_block3" parent="stays" unique_id=1050028058 instance=ExtResource("3_ofmkr")]
+transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, 2.0782347, 0.9689107, 2.5150075)
+
+[node name="ice_block4" parent="stays" unique_id=2119301718 instance=ExtResource("3_ofmkr")]
+transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, 2.2739546, 0.9689107, 0.83158755)
+
+[node name="ice_block5" parent="stays" unique_id=1402823704 instance=ExtResource("3_ofmkr")]
+transform = Transform3D(-2.4978826, 0, 0.10287338, 0, 2.5, 0, -0.10287338, 0, -2.4978826, -0.2196424, 0.9689107, 2.1983185)
+
+[node name="ice_block10" parent="stays" unique_id=162494106 instance=ExtResource("3_ofmkr")]
+transform = Transform3D(-2.4978826, 0, 0.10287338, 0, 2.5, 0, -0.10287338, 0, -2.4978826, -2.2965052, 0.9689107, 1.556674)
+
+[node name="ice_block11" parent="stays" unique_id=548643398 instance=ExtResource("3_ofmkr")]
+transform = Transform3D(-2.4978826, 0, 0.10287338, 0, 2.5, 0, -0.10287338, 0, -2.4978826, -2.2965052, 0.9689107, -0.6124921)
+
+[node name="ice_block12" parent="stays" unique_id=1872740919 instance=ExtResource("3_ofmkr")]
+transform = Transform3D(-2.4978826, 0, 0.10287338, 0, 2.5, 0, -0.10287338, 0, -2.4978826, -2.2965052, 0.9689107, -3.0866778)
+
+[node name="ice_block6" parent="stays" unique_id=936523936 instance=ExtResource("3_ofmkr")]
+transform = Transform3D(2.4988956, 0, -0.07431728, 0, 2.5, 0, 0.07431728, 0, 2.4988956, 2.2544758, 0.9689107, -1.344116)
+
+[node name="ice_block7" parent="stays" unique_id=1429532970 instance=ExtResource("3_ofmkr")]
+transform = Transform3D(-2.4978826, 0, 0.10287338, 0, 2.5, 0, -0.10287338, 0, -2.4978826, -0.2196424, 0.9689107, -2.4872646)
+
+[node name="ice_block8" parent="stays" unique_id=793540437 instance=ExtResource("3_ofmkr")]
+transform = Transform3D(-2.4978826, 0, 0.10287338, 0, 2.5, 0, -0.10287338, 0, -2.4978826, -0.2196424, 0.9689107, -0.8832388)
+
+[node name="ice_block9" parent="stays" unique_id=862006225 instance=ExtResource("3_ofmkr")]
+transform = Transform3D(2.2855322, 0, -1.0130851, 0, 2.5, 0, 1.0130851, 0, 2.2855322, 2.3749518, 0.9689107, -3.2955627)
+
+[node name="crystal_cluster2" parent="stays" unique_id=500190164 instance=ExtResource("4_rdbkn")]
+transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, 14.41317, -0.17368126, 13.283846)
+
+[node name="stalagmite_small2" parent="stays" unique_id=771151431 instance=ExtResource("5_0bl65")]
+transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, -14.256243, 0.14332438, 11.625757)
+
+[node name="stalagmite_large2" parent="stays" unique_id=58003710 instance=ExtResource("6_y7cm8")]
+transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, -14, 0.108976364, 13)
+
+[node name="stalagmite_large3" parent="stays" unique_id=1721862065 instance=ExtResource("6_y7cm8")]
+transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, 12.635463, -0.12198591, 13)
+
+[node name="ice_rock2" parent="stays" unique_id=1922157897 instance=ExtResource("7_mxq6a")]
+transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, 13, 0.0052785873, -15)
+
+[node name="ice_rock3" parent="stays" unique_id=822322977 instance=ExtResource("7_mxq6a")]
+transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, 12.278629, 0.0052785873, -15)
+
+[node name="ice_rock4" parent="stays" unique_id=1110377906 instance=ExtResource("7_mxq6a")]
+transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, 13.028709, 0.0052785873, -14.200879)
+
+[node name="ice_rock5" parent="stays" unique_id=752817592 instance=ExtResource("7_mxq6a")]
+transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, 12.278629, 0.0052785873, -14.201706)
+
+[node name="seal2" parent="stays" unique_id=1008701534 instance=ExtResource("8_puwfw")]
+transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, 12.078337, 2.2536592, -15)
+
+[node name="torch_ice_wall2" parent="stays" unique_id=1059768711 instance=ExtResource("9_fkohr")]
+transform = Transform3D(2.5, 0, 0, 0, 2.3242288, 0.9208474, 0, -0.9208474, 2.3242288, -14.928415, -0.06424475, 14.022563)
+
+[node name="stalagmite_large4" parent="stays" unique_id=1568895208 instance=ExtResource("6_y7cm8")]
+transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, -14, 0.48006916, -14)
+
+[node name="penguin2" parent="stays" unique_id=1462721318 instance=ExtResource("10_puwfw")]
+transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, -13, 3.4267473, -15)
+
+[node name="enviromentvisual" type="Node3D" parent="." unique_id=2132876993]
+
+[connection signal="body_entered" from="bluedeatharea" to="." method="_on_blue_bottom_touched"]
+[connection signal="body_entered" from="exitportal/exittrigger" to="." method="_on_exittrigger_body_entered"]
