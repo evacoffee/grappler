@@ -37,6 +37,9 @@ p.s. the game works on mobile too, so feel free to try it out! (recommended on c
   
 (all have specialized buttons on mobile)
 
+# credits
+all assets are mainly from itch assets. all rights reserved from them. 
+
 # development
 1.) clone this repo
 ```sh
