@@ -40,6 +40,14 @@ p.s. the game works on mobile too, so feel free to try it out! (recommended on c
 # credits
 all assets are mainly from itch assets. all rights reserved from them. 
 
+**sounds**:
+https://freesound.org/people/CVLTIV8R/sounds/805976/ -  by CVLTIV8R
+https://freesound.org/people/onderwish/sounds/468407/ - by onderwish
+
+**3D assets**:
+https://wriks.itch.io/wrad-arms - by wriks
+https://reodesuxz.itch.io/low-poly-ice-cave-pack - by reodesuxz
+
 # development
 1.) clone this repo
 ```sh
